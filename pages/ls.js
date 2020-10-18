@@ -1,21 +1,6 @@
 import style from "../styles/Home.module.css";
 import { Popover, OverlayTrigger, Button } from "react-bootstrap";
 export default function Ls() {
-  const popover = (
-    <Popover id="popover-basic">
-      <Popover.Title as="h3">Case-Sensitive</Popover.Title>
-      <Popover.Content>
-        Uppercase and Lowercase letters are treated as distinc
-      </Popover.Content>
-    </Popover>
-  );
-  const Example = () => (
-    <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-      <Button className={style.buttonStyle} variant="warning">
-        ?
-      </Button>
-    </OverlayTrigger>
-  );
   return (
     <div className={style.backColor}>
       <div className={style.principal}>

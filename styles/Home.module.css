@@ -6,6 +6,10 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
+.divisionTwo{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 .division div {
   align-items: center;
 }
@@ -15,12 +19,30 @@
   background-color: black;
   border-radius: 20px;
 }
+.terminalLitle {
+  width: 30rem;
+  height: 10rem;
+  background-color: black;
+  border-radius: 20px;
+}
 .terminalHead {
   background-color: lightgreen;
   width: 50rem;
   height: 30px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+}
+.terminalHeadLitle{
+  background-color: lightgreen;
+  width: 30rem;
+  height: 30px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.terminalHeadLitle p {
+  color: black;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 .terminalHead p {
   color: black;
@@ -63,4 +85,35 @@
 }
 .centerStyle {
   text-align: center;
+}
+.backFormContact {
+  background-color: #1b1a1a;
+  width: 90%;
+  margin: auto;
+  border-radius: 2rem;
+}
+.contactForm {
+  color: rgb(204, 216, 226);
+  padding: 50px;
+}
+
+.contactForm{
+  font-size: 1.5rem;
+  margin-right: 20px;
+  margin-left: 0;
+  margin-top: auto;
+}
+.contactForm input{
+  background-color: black;
+  border-color: black;
+  width: 100%;
+}
+.contactForm textarea{
+  background-color: black;
+  border-color: black;
+  width: 100%;
+}
+.textareaStyle {
+  display: flex;
+  justify-content: center;
 }
