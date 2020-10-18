@@ -25,15 +25,16 @@
 .terminalHead p {
   color: black;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 .colorLabel {
   color: aliceblue;
+  margin-left: 10px;
 }
 .inputStyle {
   background-color: black;
   color: aliceblue;
   border: none;
-  width: 36.5rem;
 }
 .inputStyle:hover {
   border: black;
@@ -48,10 +49,18 @@
 .outputTerm p {
   margin: 0;
   color: #d83535;
+  margin-left: 10px;
 }
-.buttonStyle{
+.buttonStyle {
   height: fit-content;
   width: fit-content;
   margin: 0;
   padding: 1px 2px;
+}
+.terminalSpace {
+  align-items: center;
+  margin: auto;
+}
+.centerStyle {
+  text-align: center;
 }
