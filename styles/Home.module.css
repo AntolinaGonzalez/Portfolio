@@ -1,0 +1,50 @@
+.backColor {
+  background-color: #232531;
+  padding: 0 2%;
+}
+.division {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.division div {
+  align-items: center;
+}
+.terminal {
+  width: 50rem;
+  height: 30rem;
+  background-color: black;
+  border-radius: 20px;
+}
+.terminalHead {
+  background-color: lightgreen;
+  width: 50rem;
+  height: 30px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.terminalHead p {
+  color: black;
+  margin-left: 20px;
+}
+.colorLabel {
+  color: aliceblue;
+}
+.inputStyle {
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  width: 36.5rem;
+}
+.inputStyle:hover {
+  border: black;
+}
+.principal {
+  text-align: center;
+}
+.outputHead {
+  color: aliceblue;
+}
+.outputTerm p {
+  margin: 0;
+  color: #d83535;
+}
