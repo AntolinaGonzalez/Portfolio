@@ -1,6 +1,21 @@
 import Head from "next/head";
 import style from "../styles/Home.module.css";
+import {Popover, OverlayTrigger, Button} from 'react-bootstrap'
 export default function Home() {
+  const popover = (
+    <Popover id="popover-basic">
+      <Popover.Title as="h3">Case-Sensitive</Popover.Title>
+      <Popover.Content>
+      Uppercase and Lowercase letters are treated as distinc
+      </Popover.Content>
+    </Popover>
+  );
+  const Example = () => (
+    <OverlayTrigger trigger="click" placement="right" overlay={popover}>
+      <Button className={style.buttonStyle} variant="warning">?</Button>
+    </OverlayTrigger>
+  );
+
   return (
     <div className={style.backColor}>
       <div className={style.principal}>
@@ -18,7 +33,8 @@ export default function Home() {
           <h5>Try! its fun</h5>
 
           <h4>Warning!</h4>
-          <h5>the commands are case-sensitive</h5>
+          <h5>the commands are case-sensitive <Example /></h5>
+          
         </div>
         <div>
           <h3>Terminal</h3>
