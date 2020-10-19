@@ -5,7 +5,7 @@ body {
   margin: 0;
   background-color: #232531;
 }
-h1,h2,h3,h4{
+h1,h2,h3{
     background: -webkit-gradient(linear, left top, right top, from(#c70039), color-stop(70%, #ff5733));
     background: -webkit-linear-gradient(left, #c70039, #ff5733 70%);
     background: -o-linear-gradient(left, #c70039, #ff5733 70%);
@@ -14,6 +14,10 @@ h1,h2,h3,h4{
     -webkit-text-fill-color: transparent;
     font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
 
+}
+h4{
+  color:#ff5733;
+  font-size: 1.2rem!important;
 }
 h5{
   color: aliceblue;
