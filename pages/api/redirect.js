@@ -1,11 +1,24 @@
 export default (req, res) => {
-    console.log(req.query.option)
-    if(req.query.option == 'ls'){
-        res.redirect(`/ls`)
+  let option = req.query.option;
+  let sinspace = option.trim();
+  option = "";
+  for (let i = 0; i < sinspace.length; i++) {
+    if (sinspace[i] != " ") {
+      option = option + sinspace[i];
     }
-    if(req.query.option == 'cd Contact'){
-        res.redirect(`/contact`)
-    }
-
-    res.redirect(`/error?cd=${req.query.option}`)
-}
+  }
+  option = option.toLowerCase();
+  if (option == "ls") {
+    res.redirect(`/ls`);
+  }
+  if (option == "cdcontact") {
+    res.redirect(`/contact`);
+  }
+  if (option == "cd..") {
+    res.redirect(`/`);
+  }
+  if (option == "cdeducation") {
+    res.redirect(`/education`);
+  }
+  res.redirect(`/error?cd=${option}`);
+};
