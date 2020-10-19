@@ -1,6 +1,8 @@
 import style from "../styles/Home.module.css";
 import { Button, Form, Modal } from "react-bootstrap";
 import { useState } from "react";
+import Instructions from "../components/instructions";
+import Term from '../components/littleTerm'
 export default function Contact() {
   const [show, setShow] = useState(false);
 
@@ -38,41 +40,21 @@ export default function Contact() {
           </Button>
 
           <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header closeButton className={style.modalStyle}>
               <Modal.Title>
                 <h1>Instructions</h1>
               </Modal.Title>
             </Modal.Header>
-            <Modal.Body>
-              <h6>You can manage to terminal to get to know me</h6>
-              <h6>if you wanna know what are enter 'ls' in the terminal</h6>
-              <h6>cd 'option' to see the context</h6>
-              <h6>p.e : cd Experience </h6>
-              <h6>and you will be render to my experience page</h6>
-              <h6>Try! its fun</h6>
+            <Modal.Body className={style.modalStyle}>
+              <Instructions></Instructions>
             </Modal.Body>
-            <Modal.Footer>
+            <Modal.Footer className={style.modalStyle}>
               <Button variant="secondary" onClick={handleClose}>
                 Close
               </Button>
             </Modal.Footer>
           </Modal>
-          <div className={style.terminalSpace}>
-            <h3 className={style.centerStyle}>Terminal</h3>
-            <div className={style.terminalLitle}>
-              <div className={style.terminalHeadLitle}>
-                <p>antolina@antolina-portfolio</p>
-              </div>
-              <form className={style.colorLabel} action="api/redirect">
-                <label>antolina@antolina-portfolio:~/</label>
-                <input
-                  type="text"
-                  name="option"
-                  className={style.inputStyle}
-                ></input>
-              </form>
-            </div>
-          </div>
+          <Term></Term>
         </div>
       </div>
     </div>
