@@ -129,3 +129,41 @@
   font-size: 1rem;
 }
 
+.centerStyle h5{
+  text-align: left;
+}
+/* Responsive*/
+
+@media (max-width: 1100px) {
+  .division{
+    display: block;
+  }
+  .terminal {
+    width: auto;
+    height: 15rem;
+    background-color: black;
+    border-radius: 20px;
+  }
+  .terminalHead {
+    width: 100%;
+    background-color: lightgreen;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .centerStyle {
+    text-align: center;
+  }
+  .centerStyle h5{
+    text-align: center;
+  }
+  .divisionTwo {
+    display: block;
+  }
+  .terminalLitle {
+    width: 30rem;
+    height: 10rem;
+    margin: auto;
+    background-color: black;
+    border-radius: 20px;
+  }
+}

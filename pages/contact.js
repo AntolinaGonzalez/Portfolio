@@ -33,7 +33,7 @@ export default function Contact() {
             </Form.Group>
           </Form>
         </div>
-        <div>
+        <div className={style.centerStyle}>
           <h5>If you wanna get back you will have to use the terminal</h5>
           <Button variant="success" onClick={handleShow}>
             Instructions

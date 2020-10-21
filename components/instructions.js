@@ -18,8 +18,8 @@ export default function Instructions() {
     </OverlayTrigger>
   );
   return (
-    <div>
-      <h3 className={style.centerStyle}>Instructions:</h3>
+    <div className={style.centerStyle}>
+      <h3>Instructions:</h3>
       <h5>You can manage to terminal to get to know me</h5>
       <h5>if you wanna know what are enter 'ls' in the terminal</h5>
       <h5>cd 'option' to see the context</h5>
