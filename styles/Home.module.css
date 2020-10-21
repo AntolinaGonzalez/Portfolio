@@ -166,4 +166,27 @@
     background-color: black;
     border-radius: 20px;
   }
+  .backFormContact {
+    background-color: #1b1a1a;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 0;
+    margin: auto;
+  }
+  .contactForm {
+    color: rgb(204, 216, 226);
+    padding: 20px;
+  }
+  .contactForm {
+    font-size: 1rem;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-top: auto;
+  }
+  .inputStyle {
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    width: 30%;
+  }
 }
