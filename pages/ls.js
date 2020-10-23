@@ -23,7 +23,7 @@ export default function Ls() {
               <p>Education</p>
               <p>Experience</p>
               <p>Projects</p>
-              <p>Skilss</p>
+              <p>Skills</p>
             </div>
 
             <form className={style.colorLabel} action="api/redirect">
