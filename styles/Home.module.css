@@ -132,6 +132,13 @@
 .centerStyle h5{
   text-align: left;
 }
+
+.experienceCard{
+  margin: auto;
+  width: 90%;
+  background-color: #232531;
+}
+
 /* Responsive*/
 
 @media (max-width: 1100px) {
