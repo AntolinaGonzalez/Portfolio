@@ -1,5 +1,4 @@
 import style from "../styles/Home.module.css";
-import { Popover, OverlayTrigger, Button } from "react-bootstrap";
 import Instructions from "../components/instructions";
 
 export default function Home() {
