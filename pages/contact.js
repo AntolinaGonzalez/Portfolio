@@ -2,7 +2,7 @@ import style from "../styles/Home.module.css";
 import { Button, Form, Modal } from "react-bootstrap";
 import { useState } from "react";
 import Instructions from "../components/instructions";
-import Term from '../components/littleTerm'
+import Term from "../components/littleTerm";
 export default function Contact() {
   const [show, setShow] = useState(false);
 
@@ -33,7 +33,7 @@ export default function Contact() {
             </Form.Group>
           </Form>
         </div>
-        <div className={style.centerStyle}>
+        <div>
           <h5>If you wanna get back you will have to use the terminal</h5>
           <Button variant="success" onClick={handleShow}>
             Instructions
