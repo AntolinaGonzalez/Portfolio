@@ -23,5 +23,8 @@ export default (req, res) => {
   if (option == "cdexperience") {
     res.redirect(`/experience`);
   }
+  if (option == "cdprojects") {
+    res.redirect(`/projects`);
+  }
   res.redirect(`/error?cd=${option}`);
 };
