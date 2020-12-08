@@ -7,7 +7,7 @@ export default function Ls() {
     <div className={style.backColor}>
       <Header></Header>
       <div>
-        <div className={style.rightStyle}>
+        <div className={style.right}>
           <Instructions></Instructions>
         </div>
         <div className={style.terminalSpace} className={style.centerPage}>

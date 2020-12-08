@@ -104,9 +104,22 @@
   background-color: black;
   color: aliceblue;
   border: none;
+  width: 200px;
 }
 .inputStyle:hover {
   border: black;
+}
+.inputStyle:active{
+  background-color: black;
+  color: white;
+}
+.inputStyle:focus{
+  background-color: black;
+  color: white;
+}
+.inputStyle:focus-visible{
+  background-color: black;
+  color: white;
 }
 .principal {
   text-align: center;
@@ -201,7 +214,7 @@
 .experienceCard {
   margin: auto;
   width: 90%;
-  background-color: #232531;
+  background-color: #303136;
 }
 .accordionTitle h4 {
   color: white;
@@ -212,6 +225,28 @@
 }
 .accordionBody div{
   margin-left: 50px;
+}
+.right{
+  margin-left: 600px;
+}
+.educationTerm{
+  padding: 20px;
+}
+.experienceTitle{
+  background-color: #b91d49;
+  padding: 2px;
+  width: 60%;
+  margin-left: -30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
+}
+.experienceTitle p{
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 20px;
 }
 /* Responsive*/
 
