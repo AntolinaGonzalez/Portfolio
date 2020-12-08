@@ -1,3 +1,43 @@
+.example {
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.centerPage div {
+  margin: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+.rightStyle {
+  display: flex;
+  justify-content: space-around;
+}
+.colorButton {
+  background-color: #b91d49;
+  border-color: #b91d49;
+  width: 150px;
+  height: auto;
+}
+.colorButton:hover {
+  background-color: #b91d49;
+  border-color: #b91d49;
+}
+.colorButton:focus {
+  background-color: #b91d49;
+  border-color: #b91d49;
+  box-shadow: none;
+}
+.title {
+  background-color: #b91d49;
+  padding: 5px 10px;
+}
+.title p {
+  color: wheat;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
 .backColor {
   background-color: #232531;
   padding: 2%;
@@ -18,34 +58,41 @@
   height: 25rem;
   background-color: black;
   border-radius: 20px;
+  box-shadow: 2px 2px 5px 5px rgb(34, 29, 29);
 }
 .terminalLitle {
   width: 30rem;
   height: 10rem;
   background-color: black;
   border-radius: 20px;
+  box-shadow: 2px 2px 5px 5px rgb(34, 29, 29);
+}
+.buttonTerm {
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 5px rgb(34, 29, 29);
 }
 .terminalHead {
-  background-color: lightgreen;
+  background-color: #b91d49;
   width: 50rem;
   height: 30px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 .terminalHeadLitle {
-  background-color: lightgreen;
+  background-color: #b91d49;
   width: 30rem;
   height: 30px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 .terminalHeadLitle p {
-  color: black;
+  color: white;
   margin-left: 20px;
   margin-bottom: 0;
 }
 .terminalHead p {
-  color: black;
+  color: white;
   margin-left: 20px;
   margin-bottom: 0;
 }
@@ -70,7 +117,7 @@
 }
 .outputTerm p {
   margin: 0;
-  color: #d83535;
+  color: lightgreen;
   margin-left: 10px;
 }
 .buttonStyle {
@@ -121,28 +168,55 @@
   background-color: #232531;
 }
 .backEducation {
-  background-color: #232531;
+  background-color: #565861;
   border-color: rgb(29, 28, 28);
   padding: auto;
+}
+.backEducation:focus{
+  border-color:#b91d49 ;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: none;
+}
+.backEducation:hover{
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: none;
+  border: none;
+  border-color:#b91d49 ;
+}
+.backEducation:active{
+  border: none;
+  text-decoration: none;
+  border-color:#b91d49 ;
 }
 .backEducation h5 {
   font-size: 1rem;
 }
 
-.centerStyle h5{
+.centerStyle h5 {
   text-align: left;
 }
 
-.experienceCard{
+.experienceCard {
   margin: auto;
   width: 90%;
   background-color: #232531;
 }
-
+.accordionTitle h4 {
+  color: white;
+  font-style: italic;
+}
+.accordionBody{
+  display: flex;
+}
+.accordionBody div{
+  margin-left: 50px;
+}
 /* Responsive*/
 
 @media (max-width: 1100px) {
-  .division{
+  .division {
     display: block;
   }
   .terminal {
@@ -160,7 +234,7 @@
   .centerStyle {
     text-align: center;
   }
-  .centerStyle h5{
+  .centerStyle h5 {
     text-align: center;
   }
   .divisionTwo {

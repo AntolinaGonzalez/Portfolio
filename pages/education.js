@@ -1,33 +1,45 @@
 import style from "../styles/Home.module.css";
 import { Button, Accordion, Card, Modal } from "react-bootstrap";
-import { useState } from "react";
 import Instructions from "../components/instructions";
-import Term from "../components/littleTerm";
+import Term from "../components/buttonTerm";
+import Header from "../components/header";
+import Image from "next/image";
+
 export default function Education() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
     <div className={style.backColor}>
-      <div className={style.principal}>
-        <h1>Antolina's Portfolio </h1>
-        <h2>FullStack developer</h2>
-      </div>
-      <div className={style.divisionTwo}>
-        <div>
-          <h3>Education</h3>
-          <Accordion defaultActiveKey="0" className={style.backColor}>
+      <Header></Header>
+      <div>
+        <div className={style.rightStyle}>
+          <Term></Term>
+          <Instructions></Instructions>
+        </div>
+        <p></p>
+        <div className={style.title}>
+          <p>Education</p>
+          <Accordion defaultActiveKey="0">
             <Card className={style.backEducation}>
               <Card.Header className={style.backEducation}>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                  <h4>2020 - Information Systems Engineering </h4>
+                  <div className={style.accordionTitle}>
+                    <h4>2020 - Information Systems Engineering </h4>
+                  </div>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
                 <Card.Body className={style.backEducation}>
-                  <h5>(3th year- current)</h5>
+                  <div className={style.accordionBody}>
+                    <Image
+                      src="/images/unt-logo.png"
+                      alt="Picture of the author"
+                      width={200}
+                      height={"auto"}
+                    />
+                    <div>
+                      <p>University: UTN </p>
+                      <h5>(4th year- current)</h5>
+                    </div>
+                  </div>
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
@@ -58,8 +70,8 @@ export default function Education() {
             </Card>
           </Accordion>
 
-          <h3>Courses</h3>
-          <Accordion defaultActiveKey="0" className={style.backColor}>
+          <p>Courses</p>
+          <Accordion defaultActiveKey="0">
             <Card className={style.backEducation}>
               <Card.Header className={style.backEducation}>
                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -97,30 +109,6 @@ export default function Education() {
               </Accordion.Collapse>
             </Card>
           </Accordion>
-        </div>
-
-        <div>
-          <h5>If you wanna get back you will have to use the terminal</h5>
-          <Button variant="success" onClick={handleShow}>
-            Instructions
-          </Button>
-
-          <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton className={style.modalStyle}>
-              <Modal.Title>
-                <h1>Instructions</h1>
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body className={style.modalStyle}>
-              <Instructions></Instructions>
-            </Modal.Body>
-            <Modal.Footer className={style.modalStyle}>
-              <Button variant="secondary" onClick={handleClose}>
-                Close
-              </Button>
-            </Modal.Footer>
-          </Modal>
-          <Term></Term>
         </div>
       </div>
     </div>

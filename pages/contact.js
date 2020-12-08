@@ -3,18 +3,12 @@ import { Button, Form, Modal } from "react-bootstrap";
 import { useState } from "react";
 import Instructions from "../components/instructions";
 import Term from "../components/littleTerm";
+import Header from "../components/header";
+
 export default function Contact() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
     <div className={style.backColor}>
-      <div className={style.principal}>
-        <h1>Antolina's Portfolio </h1>
-        <h2>FullStack developer</h2>
-      </div>
+      <Header></Header>
       <div className={style.divisionTwo}>
         <div className={style.backFormContact}>
           <Form className={style.contactForm}>
@@ -34,26 +28,8 @@ export default function Contact() {
           </Form>
         </div>
         <div>
-          <h5>If you wanna get back you will have to use the terminal</h5>
-          <Button variant="success" onClick={handleShow}>
-            Instructions
-          </Button>
+          <Instructions></Instructions>
 
-          <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton className={style.modalStyle}>
-              <Modal.Title>
-                <h1>Instructions</h1>
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body className={style.modalStyle}>
-              <Instructions></Instructions>
-            </Modal.Body>
-            <Modal.Footer className={style.modalStyle}>
-              <Button variant="secondary" onClick={handleClose}>
-                Close
-              </Button>
-            </Modal.Footer>
-          </Modal>
           <Term></Term>
         </div>
       </div>
